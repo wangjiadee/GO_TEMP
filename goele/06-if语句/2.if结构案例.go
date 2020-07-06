@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
+func main()  {
 	var chinese int
 	var math int
-	fmt.Println("请输入语文成绩:")
+	fmt.Println("pelase input u chinese grade:")
 	fmt.Scan(&chinese)
-	fmt.Println("请输入数学成绩:")
+	fmt.Println("pelase input u math grade:")
 	fmt.Scan(&math)
-	if chinese > 70 && math == 100{
-		fmt.Println("奖励100元")
+	if chinese > 70 && math == 100 {
+		fmt.Println("奖励绿帽子！")
 	}
 }
