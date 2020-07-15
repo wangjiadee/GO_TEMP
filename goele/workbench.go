@@ -10,6 +10,7 @@ type Person struct {
 }
 
 var personList = make([]Person, 0)
+
 // 添加联系人
 func addPerson() {
 	// 1: 定义结构体表示联系人的信息
@@ -36,7 +37,7 @@ func addPerson() {
 		fmt.Println("如果结束电话的录入，请按Q")
 		fmt.Scan(&exit)
 		if exit == "Q" {
-			break;
+			break
 		} else {
 			continue
 		}
@@ -111,7 +112,6 @@ func findPerson() *Person {
 	if index == -1 {
 		fmt.Println("没有找到联系人信息")
 		return nil
-
 	} else {
 		return &personList[index]
 	}
