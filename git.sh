@@ -10,12 +10,12 @@ git branch > $Save_Git_Branch_Path
 
 git add . 
 
-git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集成]{有关内存的理解}
+git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集成]{linux git 上传脚本}
 
 风险及影响[快/稳/省/功能]：{无}
 测试建议：{无需测试}
 跨组依赖(提交链接)：{无}
 移植适用范围：{无}"
 
-git push origin HEAD:refs/for/$Git_Branch
+git push origin HEAD:refs/for/${Git_Branch}
 
