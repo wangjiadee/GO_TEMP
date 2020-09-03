@@ -2,11 +2,12 @@
 
 set -x
 
-export Save_Git_Branch_Path="/go/src/github.com/go/GIT.txt"
+GOPATH="/go/src/github.com/go"
+mkdir ${GOPATH}/GIT.txt
+export Save_Git_Branch_Path="${GOPATH}/GIT.txt"
 Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
 
 git branch > $Save_Git_Branch_Path
-
 
 git add . 
 
@@ -17,5 +18,7 @@ git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集
 跨组依赖(提交链接)：{无}
 移植适用范围：{无}"
 
-git push origin HEAD:refs/for/${Git_Branch}
+git push
+
+rm -rf ${GOPATH}/GIT.txt
 
