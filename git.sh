@@ -22,4 +22,4 @@ git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集
 
 git push
 
-rm -rf ${GOPATH}/${GITFILE}
+rm -rf ${GOPATH}/GIT.txt
