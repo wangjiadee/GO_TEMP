@@ -143,10 +143,10 @@ func UpdateStruct(stu *Student) {
 // Multi-level pointer
 func Mul_Pointer() {
 	var a int = 10
-	var p *int //一级指针
+	var p *int    //一级指针
 	p = &a
 	fmt.Println(*p)
-	var pp **int
+	var pp **int    //二级指针
 	pp = &p
 	**pp = 200
 	fmt.Println(a)
