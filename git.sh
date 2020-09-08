@@ -6,7 +6,7 @@ set -x
 GITFILE = "GIT.txt"
 GOPATH="/go/src/github.com/go"
 mkdir ${GOPATH}/${GITFILE}
-export Save_Git_Branch_Path="${GOPATH}/${GITFILE}"
+export Save_Git_Branch_Path="${GOPATH}/GIT.txt"
 Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
 
 git branch > ${Save_Git_Branch_Path}
