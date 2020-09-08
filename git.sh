@@ -12,7 +12,7 @@ Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
 echo "Get git brach finish....."
 
 echo "Push code ....."
-git add . 
+git add --all . 
 
 git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集成]{$1}"
 
