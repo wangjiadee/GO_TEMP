@@ -7,9 +7,8 @@ set -x
 GOPATH="/go/src/github.com/go"
 touch ${GOPATH}/GIT.txt
 export Save_Git_Branch_Path="${GOPATH}/GIT.txt"
-Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
-
 git branch > ${Save_Git_Branch_Path}
+Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
 
 git add . 
 
