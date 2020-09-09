@@ -6,9 +6,9 @@
 set -x
 
 
-GOPATH= $1
-touch ${GOPATH}/GIT.txt
-export Save_Git_Branch_Path="${GOPATH}/GIT.txt"
+DIYGOPATH= $1
+touch ${DIYGOPATH}/GIT.txt
+export Save_Git_Branch_Path="${DIYGOPATH}/GIT.txt"
 git branch > ${Save_Git_Branch_Path}
 Git_Branch = `awk -F " " '{print $2}' "${Save_Git_Branch_Path}" `
 echo "Get git brach finish....."
@@ -20,4 +20,4 @@ git commit -m "[go][ralph.Build][1/1][BugId:N/A][无风险][无依赖][自然集
 
 git push
 
-rm -rf ${GOPATH}/GIT.txt
+rm -rf ${DIYGOPATH}/GIT.txt
