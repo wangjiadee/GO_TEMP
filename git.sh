@@ -4,7 +4,7 @@
 
 set -x
 
-GOPATH="/go/src/github.com/go"
+GOPATH="/root/go/src/github.com"
 touch ${GOPATH}/GIT.txt
 export Save_Git_Branch_Path="${GOPATH}/GIT.txt"
 git branch > ${Save_Git_Branch_Path}
